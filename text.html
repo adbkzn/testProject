@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>classList replace Example</title>
+    <style>
+        .red { color: red; background-color: yellow;}
+        .blue { color: blue; background-color: pink; }
+    </style>
+</head>
+<body>
+    <p id="example" class="red mainClass">This text is red.</p>
+    <button onClick="replaceClass()">Replace Class</button>
+
+    <script>
+        function replaceClass() {
+            const element = document.getElementById('example');
+            if(element.classList.contains("red"))
+              element.classList.replace('red', 'blue');
+            else{
+              element.classList.replace('blue', 'red');
+
+            }
+        }
+    </script>
+</body>
+</html>
+
+     
